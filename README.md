@@ -2,11 +2,11 @@
 This repository contains the code for the paper "Evolution Meets Diffusion: Efficient Neural Architecture Generation" (EDNAG: **E**volutionary **D**iffusion-based **N**eural **A**rchitecture **G**eneration).         
 
 ## Overview
-![overview](method_overview.png)
+![overview](figs/method_overview.png)
 
 Neural Architecture Search (NAS) has gained widespread attention for its transformative potential in deep learning model design. However, the vast and complex search space of NAS leads to significant computational and time costs. Neural Architecture Generation (NAG) addresses this by reframing NAS as a generation problem, enabling the precise generation of optimal architectures for specific tasks. Despite its promise, mainstream methods like diffusion models face limitations in global search capabilities and are still hindered by high computational and time demands. When migrating to new search spaces, current methods require retraining, which incurs substantial computational overhead and makes it difficult to quickly adapt to unseen search spaces. To overcome these challenges, we propose Evolutionary Diffusion-based Neural Architecture Generation (EDNAG), a novel approach that achieves efficient and training-free architecture generation. EDNAG leverages evolutionary algorithms to simulate the denoising process in diffusion models, using fitness to guide the transition from random Gaussian distributions to optimal architecture distributions. This approach combines the strengths of evolutionary strategies and diffusion models, enabling rapid and effective architecture generation. Extensive experiments demonstrate that EDNAG achieves state-of-the-art (SOTA) performance in architecture optimization, with an improvement in accuracy of up to 10.45%. Furthermore, it eliminates the need for time-consuming training and boosts inference speed by an average of 50×, showcasing its exceptional efficiency and effectiveness.
 
-![Denoise](Denoise.png)
+![Denoise](figs/Denoise.png)
 
 - You can find the paper [here](https://arxiv.org/abs/2504.17827).
 
@@ -195,5 +195,5 @@ Since `ops = ['input', 'output', 'none', 'skip_connect', 'nor_conv_1x1', 'nor_co
 
 <h4 style="color:gray">Experiments Results</h4>
 
-![nb201](NAS-Bench-201/exp_result.png)
+![nb201](code/exp_result.png)
 
