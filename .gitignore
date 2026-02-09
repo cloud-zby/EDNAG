@@ -3,4 +3,4 @@ nasbench.egg-info/
 *.pyc
 __pycache__/
 *.tfrecord
-
+*.log
